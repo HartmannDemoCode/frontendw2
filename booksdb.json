@@ -1,0 +1,117 @@
+{
+  "books": [
+    {
+      "id": "101",
+      "title": "eveniet ipsam minus hic inventore",
+      "author": "Rozella Swaniawski",
+      "rating": 1.35,
+      "year_published": 1858
+    },
+    {
+      "id": "102",
+      "title": "quo quaerat in sit",
+      "author": "Kasey Crona",
+      "rating": 1.35,
+      "year_published": 1830
+    },
+    {
+      "id": "103",
+      "title": "sapiente voluptas facilis quo quo",
+      "author": "Alfredo Zieme",
+      "rating": 2.75,
+      "year_published": 1837
+    },
+    {
+      "id": "104",
+      "title": "tenetur suscipit",
+      "author": "Dovie Lowe",
+      "rating": 2.9,
+      "year_published": 1952
+    },
+    {
+      "id": "105",
+      "title": "laudantium facere vel ducimus incidunt",
+      "author": "Elisa Gaylord",
+      "rating": 3.85,
+      "year_published": 2016
+    },
+    {
+      "id": "106",
+      "title": "omnis officia quaerat aut",
+      "author": "Thomas Miller",
+      "rating": 0.4,
+      "year_published": 1712
+    },
+    {
+      "id": "107",
+      "title": "qui nam qui ea quia",
+      "author": "Lourdes Ernser",
+      "rating": 4.85,
+      "year_published": 1813
+    },
+    {
+      "id": "108",
+      "title": "cumque qui nulla ut maiores fugit",
+      "author": "Melany Mills",
+      "rating": 0.45,
+      "year_published": 1920
+    },
+    {
+      "id": "109",
+      "title": "et necessitatibus",
+      "author": "Lucinda Jacobson",
+      "rating": 4.55,
+      "year_published": 1898
+    },
+    {
+      "id": "110",
+      "title": "est officia dolor deserunt suscipit",
+      "author": "Oceane Daniel",
+      "rating": 2.8,
+      "year_published": 1906
+    },
+    {
+      "id": "111",
+      "title": "ex et fugiat quia omnis",
+      "author": "Tad Olson",
+      "rating": 3.2,
+      "year_published": 1869
+    },
+    {
+      "id": "112",
+      "title": "delectus est",
+      "author": "Gregory Ledner",
+      "rating": 1.45,
+      "year_published": 1867
+    },
+    {
+      "id": "113",
+      "title": "dolorem sed",
+      "author": "Arlo Schroeder",
+      "rating": 3.1,
+      "year_published": 1706
+    },
+    {
+      "id": "114",
+      "title": "et dicta",
+      "author": "Lura Hodkiewicz",
+      "rating": 0.3,
+      "year_published": 1878
+    },
+    {
+      "id": "115",
+      "title": "autem consequuntur repellendus",
+      "author": "Ayden Padberg",
+      "rating": 0.25,
+      "year_published": 1935
+    },
+    {
+      "title": "test",
+      "author": "test",
+      "rating": 4.44,
+      "year_published": 1999,
+      "id": "SPF0YWDcQw4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
