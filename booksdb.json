@@ -5,112 +5,120 @@
       "title": "eveniet ipsam minus hic inventore",
       "author": "Rozella Swaniawski",
       "rating": 1.35,
-      "year_published": 1858
+      "year_published": 1858,
+      "image_url": "https://covers.openlibrary.org/b/id/7995156-M.jpg"
     },
     {
       "id": "102",
       "title": "quo quaerat in sit",
       "author": "Kasey Crona",
       "rating": 1.35,
-      "year_published": 1830
+      "year_published": 1830,
+      "image_url": "https://covers.openlibrary.org/b/id/7968149-M.jpg"
     },
     {
       "id": "103",
       "title": "sapiente voluptas facilis quo quo",
       "author": "Alfredo Zieme",
       "rating": 2.75,
-      "year_published": 1837
+      "year_published": 1837,
+      "image_url": "https://covers.openlibrary.org/b/id/8007534-M.jpg"
     },
     {
       "id": "104",
       "title": "tenetur suscipit",
       "author": "Dovie Lowe",
       "rating": 2.9,
-      "year_published": 1952
+      "year_published": 1952,
+      "image_url": "https://covers.openlibrary.org/b/id/9086267-M.jpg"
     },
     {
       "id": "105",
       "title": "laudantium facere vel ducimus incidunt",
       "author": "Elisa Gaylord",
       "rating": 3.85,
-      "year_published": 2016
+      "year_published": 2016,
+      "image_url": "https://covers.openlibrary.org/b/id/8385838-M.jpg"
     },
     {
       "id": "106",
       "title": "omnis officia quaerat aut",
       "author": "Thomas Miller",
       "rating": 0.4,
-      "year_published": 1712
+      "year_published": 1712,
+      "image_url": "https://covers.openlibrary.org/b/id/7968146-M.jpg"
     },
     {
       "id": "107",
       "title": "qui nam qui ea quia",
       "author": "Lourdes Ernser",
       "rating": 4.85,
-      "year_published": 1813
+      "year_published": 1813,
+      "image_url": "https://covers.openlibrary.org/b/id/8019571-M.jpg"
     },
     {
       "id": "108",
       "title": "cumque qui nulla ut maiores fugit",
       "author": "Melany Mills",
       "rating": 0.45,
-      "year_published": 1920
+      "year_published": 1920,
+      "image_url": "https://covers.openlibrary.org/b/id/8376289-M.jpg"
     },
     {
       "id": "109",
       "title": "et necessitatibus",
       "author": "Lucinda Jacobson",
       "rating": 4.55,
-      "year_published": 1898
+      "year_published": 1898,
+      "image_url": "https://covers.openlibrary.org/b/id/8009945-M.jpg"
     },
     {
       "id": "110",
       "title": "est officia dolor deserunt suscipit",
       "author": "Oceane Daniel",
       "rating": 2.8,
-      "year_published": 1906
+      "year_published": 1906,
+      "image_url": "https://covers.openlibrary.org/b/id/8372839-M.jpg"
     },
     {
       "id": "111",
       "title": "ex et fugiat quia omnis",
       "author": "Tad Olson",
       "rating": 3.2,
-      "year_published": 1869
+      "year_published": 1869,
+      "image_url": "https://covers.openlibrary.org/b/id/8003892-M.jpg"
     },
     {
       "id": "112",
       "title": "delectus est",
       "author": "Gregory Ledner",
       "rating": 1.45,
-      "year_published": 1867
+      "year_published": 1867,
+      "image_url": "https://covers.openlibrary.org/b/id/7995144-M.jpg"
     },
     {
       "id": "113",
       "title": "dolorem sed",
       "author": "Arlo Schroeder",
       "rating": 3.1,
-      "year_published": 1706
+      "year_published": 1706,
+      "image_url": "https://covers.openlibrary.org/b/id/8012345-M.jpg"
     },
     {
       "id": "114",
       "title": "et dicta",
       "author": "Lura Hodkiewicz",
       "rating": 0.3,
-      "year_published": 1878
+      "year_published": 1878,
+      "image_url": "https://covers.openlibrary.org/b/id/8021567-M.jpg"
     },
     {
       "id": "115",
       "title": "autem consequuntur repellendus",
       "author": "Ayden Padberg",
       "rating": 0.25,
-      "year_published": 1935
-    },
-    {
-      "title": "test",
-      "author": "test",
-      "rating": 4.44,
-      "year_published": 1999,
-      "id": "SPF0YWDcQw4"
+      "year_published": 1935,
+      "image_url": "https://covers.openlibrary.org/b/id/8345678-M.jpg"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
