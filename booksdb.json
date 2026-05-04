@@ -1,14 +1,6 @@
 {
   "books": [
     {
-      "id": "101",
-      "title": "eveniet ipsam minus hic inventore",
-      "author": "Rozella Swaniawski",
-      "rating": 1.35,
-      "year_published": 1858,
-      "image_url": "https://covers.openlibrary.org/b/id/7995156-M.jpg"
-    },
-    {
       "id": "102",
       "title": "quo quaerat in sit",
       "author": "Kasey Crona",

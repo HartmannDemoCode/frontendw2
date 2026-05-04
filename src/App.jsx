@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import BookForm from "./components/bookForm/BookForm";
 import BookTable from "./components/bookTable/BookTable";
+import Header from "./components/header/Header";
 import apiFacade from "./services/bookApiFacade";
 import { Outlet } from "react-router";
 
@@ -28,12 +29,28 @@ function App() {
   };
 
   const handleDetails = (book) => {
-    // TODO: Implement a Details component to show all details
+    (async () => {
+      try {
+        const bookDetails = await apiFacade.getBook(book.id);
+        alert(
+          `Title: ${bookDetails.title}\nAuthor: ${bookDetails.author}\nRating: ${bookDetails.rating}\nYear Published: ${bookDetails.year_published}\nImage URL: ${bookDetails.image_url || "N/A"}`
+        );
+      } catch (error) {
+        alert("Could not load book details.");
+      }
+    })();
   };
 
-  const handleEdit = (book) => {
-    console.log("Edit book:", book);
-    // TODO: Implement edit functionality
+  const handleEdit = async (book) => {
+    const updatedBook = await apiFacade.updateBook(book.id, {
+      ...book,
+      title,
+    });
+    setBooks((prevBooks) =>
+      prevBooks.map((currentBook) =>
+        currentBook.id === book.id ? updatedBook : currentBook
+      )
+    );
   };
 
   const handleDelete = async (bookId) => {
@@ -53,8 +70,7 @@ function App() {
         onEdit={handleEdit}
         onDelete={handleDelete}
       /> */}
-      {/* <Header/> */}
-      <h1>APP</h1>
+      <Header />
       <Outlet context={{handleAddBook, books, handleDetails, handleEdit, handleDelete}}/>
     </>
   );

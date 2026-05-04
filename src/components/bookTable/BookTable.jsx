@@ -1,4 +1,4 @@
-import { useOutletContext } from 'react-router'
+import { useOutletContext, Link } from 'react-router'
 import './bookTable.css'
 
 function BookTable() {
@@ -28,9 +28,9 @@ function BookTable() {
                   </td>
                   <td>{book.year_published}</td>
                   <td className="actions-cell">
-                    <button className="action-btn details-btn" onClick={() => handleDetails && handleDetails(book)} title="View details">
+                    <Link to={`/details/${book.id}`} className="action-btn details-btn" title="View details">
                       Details
-                    </button>
+                    </Link>
                     <button className="action-btn edit-btn" onClick={() => handleEdit && handleEdit(book)} title="Edit book">
                       Edit
                     </button>
