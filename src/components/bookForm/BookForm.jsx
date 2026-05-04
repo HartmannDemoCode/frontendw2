@@ -1,49 +1,21 @@
 import { useState } from 'react'
+import { useOutletContext } from 'react-router'
 import './bookForm.css'
 
-function BookForm({ onBookAdded }) {
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [formError, setFormError] = useState('')
-  const [formMessage, setFormMessage] = useState('')
+function BookForm() {
+    const {handleAddBook} = useOutletContext();
+  
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    setIsSubmitting(true)
-    setFormError('')
-    setFormMessage('')
 
     const form = event.currentTarget
     const rawFormData = new FormData(form)
-
-    const bookPayload = {
-      title: String(rawFormData.get('title') || '').trim(),
-      author: String(rawFormData.get('author') || '').trim(),
-      rating: Number(rawFormData.get('rating')),
-      year_published: Number(rawFormData.get('year_published')),
-    }
-
-    try {
-      const response = await fetch('http://localhost:4000/books', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(bookPayload),
-      })
-
-      if (!response.ok) {
-        throw new Error('Could not save book')
-      }
-
-      const createdBook = await response.json()
-      form.reset()
-      setFormMessage('Book added successfully.')
-      onBookAdded(createdBook)
-    } catch (error) {
-      setFormError(error.message || 'Something went wrong while adding the book.')
-    } finally {
-      setIsSubmitting(false)
-    }
+    const formObject = Object.fromEntries(rawFormData)
+    console.log(formObject)
+    handleAddBook(formObject);
+    form.reset();
+    
   }
 
   return (
@@ -80,11 +52,7 @@ function BookForm({ onBookAdded }) {
         />
       </div>
 
-      <button type="submit" disabled={isSubmitting} className="submit-btn">
-        {isSubmitting ? 'Adding...' : 'Add Book'}
-      </button>
-      {formError ? <p className="form-error">{formError}</p> : null}
-      {formMessage ? <p className="form-message">{formMessage}</p> : null}
+      <button type="submit" className="submit-btn"> Add new Book </button>
     </form>
   )
 }

@@ -1,6 +1,8 @@
+import { useOutletContext } from 'react-router'
 import './bookTable.css'
 
-function BookTable({ books, onDetails, onEdit, onDelete }) {
+function BookTable() {
+  const {books, handleDetails, handleEdit, handleDelete} = useOutletContext();
   return (
     <section className="books-section">
       <h1>Books</h1>
@@ -26,13 +28,13 @@ function BookTable({ books, onDetails, onEdit, onDelete }) {
                   </td>
                   <td>{book.year_published}</td>
                   <td className="actions-cell">
-                    <button className="action-btn details-btn" onClick={() => onDetails && onDetails(book)} title="View details">
+                    <button className="action-btn details-btn" onClick={() => handleDetails && handleDetails(book)} title="View details">
                       Details
                     </button>
-                    <button className="action-btn edit-btn" onClick={() => onEdit && onEdit(book)} title="Edit book">
+                    <button className="action-btn edit-btn" onClick={() => handleEdit && handleEdit(book)} title="Edit book">
                       Edit
                     </button>
-                    <button className="action-btn delete-btn" onClick={() => onDelete && onDelete(book.id)} title="Delete book">
+                    <button className="action-btn delete-btn" onClick={() => handleDelete && handleDelete(book.id)} title="Delete book">
                       Delete
                     </button>
                   </td>
